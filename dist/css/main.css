@@ -39,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(55, 55, 55, 0.9);
+    background: rgba(38, 38, 38, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.75s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(68, 68, 68, 0.9);
+    background: rgba(51, 51, 51, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.75s ease-out; }
     .menu-branding.show {
@@ -93,7 +93,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #333;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -111,7 +111,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
+      background: rgba(51, 51, 51, 0.9); }
 
 h1,
 h2,
@@ -127,7 +127,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1 em;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(56, 56, 56, 0.5); }
 
 a {
   color: #fff;
@@ -176,19 +176,17 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #404040;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-gap: 4rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
-      opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.75s ease-out; }
 
@@ -211,12 +209,12 @@ main {
       .boxes div:hover span {
         color: #000; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-dark:hover {
     background: #eece1a;
     color: #000; }
 
@@ -224,14 +222,10 @@ main {
   background: black;
   color: #fff; }
 
-.btn-light {
-  background: #c4c4c4;
-  color: #333; }
-
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #1a1a1a;
   color: #fff;
   height: 60px; }
 
@@ -276,7 +270,12 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }

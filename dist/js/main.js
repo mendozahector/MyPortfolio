@@ -31,3 +31,14 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+//Work Page
+function hover(element) {
+  let name = element.getAttribute("alt");
+  element.setAttribute("src", "img/projects/" + name + ".gif");
+}
+
+function unhover(element) {
+  let name = element.getAttribute("alt");
+  element.setAttribute("src", "img/projects/" + name + ".png");
+}

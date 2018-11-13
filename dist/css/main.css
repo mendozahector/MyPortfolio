@@ -182,7 +182,8 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 4rem; }
+  grid-gap: 4rem;
+  padding: 1rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -278,4 +279,5 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
+    padding: 2.5rem;
     grid-template-columns: 1fr; } }
